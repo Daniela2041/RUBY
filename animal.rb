@@ -15,18 +15,18 @@ class Perro < Animal
 end 
 
 class Gato < Animal
-  
+
 end 
 
 gato = Gato.new()
 
 perro = Perro.new
 
-def ladrar(instance)
-    instance.ladrar()
-end
+animal = Animal.new(10)
 
-ladrar(gato)
-ladrar(perro)
+animal.patas = 10
+ 
+print "cuantas patas tienes : #{animal.patas}"
+# perro.ladrar
 
 # perro.comer
